@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="user-info">
+
+    <div class="info">
+      <h1 class="wlcm-txt">Welcome dear <%= currentUser.name %></h1>
+      <p>Your inserted info is as below:</p>
+      <hr>
+      <p class="user-details">Username: <span><%= currentUser.username %></span></p>
+      <p class="user-details">Name: <span><%= currentUser.name %></span></p>
+      <p class="user-details">Last Name: <span><%= currentUser.lastName %></span></p>
+      <p class="user-details">Email: <span><%= currentUser.email %></span></p>
+      <a href="/user/update" class="btn-link">Update Info</a>
+      <a href="/logout" class="btn-link">Log Out</a>
+      <form action="/user/delete?_method=DELETE" method="POST">
+        <button class="btn-link delete">Delete Account</button>
+      </form>
+      
+    </div>
+    <div class="pic">
+      <img src="./user.png" alt="user illustration">
+    </div>
+
+  </div>
+
+</div>

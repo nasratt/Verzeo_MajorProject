@@ -1,0 +1,16 @@
+<div class="container">
+
+    <div class="sign-up">
+        <h1 class="form-title">Update Info</h1>
+        <form action="/user?_method=PUT" method="POST" class="form" autocomplete="off">
+            <input type="text" name="data[username]" value="<%= currentUser.username %>" class="input-field" required>
+            <input type="text" name="data[name]" value="<%= currentUser.name %>" class="input-field" required>
+            <input type="text" name="data[lastName]" value="<%= currentUser.lastName %>" class="input-field" required>
+            <input type="email" name="data[email]" value="<%= currentUser.email %>" class="input-field" required>
+            <input type="password" name="password" placeholder="Enter old password..." class="input-field" required>
+            <input type="password" name="newPassword" placeholder="Enter new password..." class="input-field" required>
+            <button class="btn" type="submit">Update</button>
+        </form>
+    </div>
+
+</div>
